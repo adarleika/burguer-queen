@@ -1,0 +1,64 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+/*.App-header {*/
+body{
+ /* background-color: #282c34;*/
+  background-image: url('../imagenes/imagenFondo.png');
+  min-height: 100vh; 
+ /* width: 100%;*/
+ /* height: 100vh;*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+  /*display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;*/
+
+  font-size: calc(10px + 2vmin);
+  color: red;
+}
+  
+/*voy a poner la opasidad*/
+body:before {
+  content: '';
+  width: 100%;
+  min-height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  /*ver la opasidad del figma y copiar aqui los colores*/
+  background:linear-gradient(#52c4df, #ad55c1);
+
+  opacity: 0.7;
+  z-index:-1;
+}
+
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
