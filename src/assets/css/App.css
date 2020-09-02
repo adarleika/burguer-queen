@@ -3,15 +3,16 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 20vmin;
   pointer-events: none;
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
+/*@media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
+}*/
 
 
 /*.App-header {*/
@@ -44,7 +45,7 @@ body:before {
   top: 0;
   left: 0;
   /*ver la opasidad del figma y copiar aqui los colores*/
-  background:linear-gradient(#52c4df, #ad55c1);
+  /*background:linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.58) 38.02%);*/
 
   opacity: 0.7;
   z-index:-1;
@@ -63,4 +64,10 @@ body:before {
   to {
     transform: rotate(360deg);
   }
+}
+
+.contenedor{
+  background: rgba(255, 255, 255, 0.68);
+  mix-blend-mode: normal;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
