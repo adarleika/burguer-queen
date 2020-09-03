@@ -1,0 +1,20 @@
+/* MENU LATERAL*/
+.menulateral {
+    width: 30%;
+    height: 100%;
+    display: block;
+    margin: 1.5rem auto auto auto;
+    font-weight: 500;
+  }
+  
+  .button {
+    width: 30%;
+    height: 50%;
+    background: #022939;
+    font-size: 1rem;
+    display: block;
+    margin: 1.5rem auto auto auto;
+    font-weight: 500;
+  }
+  
+  

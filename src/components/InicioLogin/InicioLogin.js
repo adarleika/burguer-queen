@@ -1,5 +1,8 @@
 import React from "react";
-import logo_size from '../assets/imagenes/logo_size.jpg'; 
+import logo_size from '../../assets/imagenes/logo_size.jpg'; 
+import camarero from '../../assets/imagenes/camarero.png';
+import cocinero from '../../assets/imagenes/cocinero.png';
+import './InicioLogin.css';
 
 class InicioLogin extends React.Component{
      render(){
@@ -7,8 +10,9 @@ class InicioLogin extends React.Component{
             <React.Fragment>
                 <div className="contenedor"> 
                 <img src={logo_size} className="App-logo" alt="logo_size"/> 
-                <h1> hello soy el componente de InicioLogin </h1>
                 
+                <img src={camarero} className="camarero" alt="camarero"/> 
+                <img src={cocinero} className="cocinero" alt="cocinero"/> 
                 </div>
             </React.Fragment>
             

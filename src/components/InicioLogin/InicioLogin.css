@@ -1,0 +1,48 @@
+.App-logo{
+
+    position: absolute;
+    left: 13.15%;
+    right: 27.17%;
+    top: 9.24%;
+    bottom: 64.19%;
+}
+
+
+.camarero{
+
+    width: 132px;
+    height: 141px;
+
+    position: absolute;
+    left: 16.02%;
+    right: 66.08%;
+    top: 39.3%;
+    bottom: 27.34%;
+
+  
+}
+
+.cocinero{
+
+    width: 132px;
+    height: 141px;
+
+    position: absolute;
+    left: 59.85%;
+    right: 27.37%;
+    top: 39.3%;
+    bottom: 27.34%;
+  
+}
+
+.contenedor{
+    
+    background: rgba(255, 255, 255, 0.68);
+    mix-blend-mode: normal;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    left: 20.72%;
+    right: 16.52%;
+    top: 0%;
+    bottom: 0%;
+}
