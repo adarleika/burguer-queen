@@ -8,7 +8,7 @@ function usePostres() {
             .then(response => response.json())
             .then(datos => {
                 setPostres(datos)
-            })x
+            })
     }, [])
     return postres
 }
