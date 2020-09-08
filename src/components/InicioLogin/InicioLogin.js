@@ -4,6 +4,7 @@ import camarero from '../../assets/imagenes/camarero.png';
 import cocinero from '../../assets/imagenes/cocinero.png';
 import './InicioLogin.css';
 import PedidosMesero from '../../view/viewMasterMesero';
+import PedidosCocina from '../../view/viewCocina';
 import { NavLink } from 'react-router-dom';
 
 
@@ -19,6 +20,7 @@ class InicioLogin extends React.Component{
                 <img src={cocinero} className="cocinero" alt="cocinero"/> 
 
                 <NavLink to="/viewMasterMesero" src={camarero} className="camarero" alt="camarero"></NavLink>
+                <NavLink to="/viewCocina" src={cocinero} className="cocinero" alt="cocinero"></NavLink>
 
                 </div>
                 
@@ -35,6 +37,17 @@ class InicioLogin extends React.Component{
         return (
             //PedidosMesero
             <PedidosMesero/>
+            
+   
+        );
+ 
+     }
+     funcioncocina(){
+        //const PedidosMesero = useState([])
+        return (
+            //PedidosMesero
+            <PedidosCocina/>
+            
    
         );
  

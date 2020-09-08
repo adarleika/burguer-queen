@@ -1,0 +1,58 @@
+/* MENU */
+*{
+  margin:0px;
+  padding:0px;
+  font-family: Roboto;
+}
+
+.cocinerococina {
+  position: absolute;
+  left: 1.54%;
+  right: 93.48%;
+  width: 65px;
+  top: 1px;
+}
+
+.literalmenucocina {
+  position: absolute;
+  width: 100%;
+  display: block;
+  margin-top: 1rem;
+  justify-items: start; 
+  align-items: stretch; 
+  transform: rotate(360deg);
+}
+  
+.btnprepara {
+  position: absolute;
+  width: 420px;
+  height: 80px;
+  left: -171px;
+  top: 246px;
+  background: #022939;
+  transform: rotate(-90deg);
+  color: #FFFFFF;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+}
+  
+.btnlisto {
+  position: absolute;
+  width: 260px;
+  height: 80px;
+  left: -91px;
+  top: 583px;
+  background: #F18416;;
+  transform: rotate(-90deg);
+  color: #022939;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+}
+
+  
