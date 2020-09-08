@@ -41,7 +41,7 @@ export default function Datos() {
 
             ))}
       </table>
-        
+
       </div>
 
    )
