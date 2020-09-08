@@ -1,10 +1,9 @@
-
 .img-izq {
   position: absolute;
   left: 1.54%;
   right: 93.48%;
   width: 65px;
-  top: -44px;
+  top: -1px;
 }
 
 .lateralmenu {
@@ -21,8 +20,8 @@
   position: absolute;
   width: 340px;
   height: 80px;
-  left: -125px;
-  top: 163px;
+  left: -130px;
+  top: 205px;
   background: #022939;
   transform: rotate(-90deg);
   color: #FFFFFF;
@@ -38,16 +37,15 @@
   position: absolute;
   width: 340px;
   height: 80px;
-  left: -125px;
-  top: 497px;
+  left: -130px;
+  top: 543px;
   background: #C4C4C4;
   transform: rotate(-90deg);
   color: #022939;
-
   font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 20px;
-line-height: 23px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
 }
   

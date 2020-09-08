@@ -11,37 +11,29 @@ function useMenu() {
             setMenu(datos)
          })
    }, [])
-
-   return menu
+return menu
 }
+
 //exporto esta fucnion, pero no va a ninguan parte???
 export default function Datos() {
-
    const menu = useMenu()
-
    return (
-
       <div className="contenedorDeMenu">
-
          <h1 className="TituloCarta"> Carta </h1>
-
          <table>
-
-
             <tr>
-
-               <th><button id="" type="button" className=".btnMenuTituloDos">PICOTEO</button></th>
-               
-
+               <th><button id="" type="button" className="btnMenuTitulo">PICOTEO</button></th>
             </tr>
-            {menu.map(item => (
-               <tr key={item.type}>
-                  <td><button id="" type="button" className="btnDetalleMenu">{item.name}:${item.price}</button></td>
-               </tr>
-
-            ))}
-      </table> 
-
+            <tbody>
+               {menu.map(item => (
+                  <tr key={item.type}>
+                     <td><button id={item.id} type="button" className="btnDetalleMenu" onClick={()=>
+                        console.log (item.name)}
+                     >{item.name}:${item.price}</button></td>
+                  </tr>
+               ))}
+            </tbody>
+         </table>
       </div>
    )
 };

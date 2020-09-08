@@ -8,8 +8,6 @@ import MenuPostres from '../components/MenuPostres/MenuPostres'
 import MenuLicores from '../components/MenuLicores/MenuLicores'
 import MenuBebidas from '../components/MenuBebidas/MenuBebidas'
 
-
-
 function PedidosMesero() {
     return(
     <div>
@@ -24,6 +22,4 @@ function PedidosMesero() {
     </div> 
     )
 }
-
-
 export default PedidosMesero
