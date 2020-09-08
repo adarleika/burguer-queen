@@ -6,6 +6,7 @@ import InicioLog from '../src/view/viewInicioLogin';
 //import MenuLateral from './components/MenuLateral/MenuLateral';
 import PedidosMesero from '../src/view/viewMasterMesero';
 import EstatusPedidos from '../src/view/viewEstatusPedidos';
+import PedidosCocina from '../src/view/viewCocina';
 
 class Router extends Component {
 
@@ -16,6 +17,8 @@ class Router extends Component {
                     <Route exact path="/" component={InicioLog}/>
                     <Route exact path="/viewMasterMesero" component={PedidosMesero}/>
                     <Route exact path="/viewEstatusPedidos" component={EstatusPedidos}/>
+                    <Route exact path="/viewCocina" component={PedidosCocina}/>
+
                    
                 </Switch>
             

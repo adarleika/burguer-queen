@@ -1,6 +1,7 @@
 import React from 'react';
 import './assets/css/App.css';
 import Router  from './Router'
+//import MenuCarta from './components/MenuCarta/MenuCarta'
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
 
 
         <Router/>
-        
+      
         
         </section>
 
