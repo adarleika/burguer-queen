@@ -1,11 +1,13 @@
-.contenedorDeMenu{
-    position: absolute;
-    width: 578px;
-    height: 582px;
-    left: 112px;
-    top: 52px;
-    
-  
+.contenedorDeAlmuerzo{
+   
+
+  position: absolute;
+width: 173px;
+height: 203px;
+left: 320px;
+top: 52px;
+
+background: #C4C4C4;
 }
 
 table {

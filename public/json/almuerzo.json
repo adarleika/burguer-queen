@@ -1,0 +1,26 @@
+[
+        {
+        "id":"10",
+        "type": "almuerzo",
+          "name": "Pollo al Jugo",
+          "price": 3000,
+          "description": "Pollo dorado a las brazas"
+          
+        },
+        {
+            "id":"11",
+          "type": "almuerzo",
+          "name": "Bistec a lo pobre",
+          "price": 6000,
+          "description": "carne, papas fritas y huevo frito"
+          
+        },
+        {
+            "id":"12",
+          "type": "almuerzo",
+          "name": "Charquican",
+          "price": 4000,
+          "description": "pure de papas, cebolla, zapallo, carne en trozos"
+          
+        }
+]
