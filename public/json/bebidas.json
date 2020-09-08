@@ -1,0 +1,19 @@
+[
+
+    {   "id":"12",
+        "type": "bebidas",
+        "name": "agua",
+        "price": 1000
+      },
+  
+      {
+        "name": "gaseosa",
+        "price": 1500
+      },
+      {
+        "name": "jugo Natural",
+        "price": 1500
+      }
+  
+  
+]

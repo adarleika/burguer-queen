@@ -1,0 +1,20 @@
+[
+
+    { "id":"12",
+        "type": "licores",
+        "name": "cerveza",
+        "price": 2000
+      },
+  
+      {
+        "name": "Piscola",
+        "price": 3500
+      },
+      {
+        "name": "Vino",
+        "price": 5500
+      }
+  
+  
+]
+
