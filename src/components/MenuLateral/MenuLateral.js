@@ -8,10 +8,10 @@ class MenuLateral extends React.Component{
             <React.Fragment>
             {/*<h1> esto es la vista del menu lateral</h1>*/}
                 <div className="lateralmenu">
-                    <img src={camarero} class="img-izq" alt="camarero"/> 
+                    <img src={camarero} className="img-izq" alt="camarero"/> 
                
-                <button id="pedido" type="button" class="button1">HACER PEDIDO</button>
-                <button id="mipedido" type="button" class="button2">MIS PEDIDO</button>
+                <button id="pedido" type="button" className="button1">HACER PEDIDO</button>
+                <button id="mipedido" type="button" className="button2">MIS PEDIDO</button>
                  </div>
             </React.Fragment>
         );
