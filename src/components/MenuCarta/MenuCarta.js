@@ -40,8 +40,8 @@ export default function Datos() {
                </tr>
 
             ))}
-      </table>
-         
+      </table> 
+
       </div>
    )
 };
