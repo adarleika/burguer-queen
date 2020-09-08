@@ -41,16 +41,6 @@ export default function Datos() {
 
             ))}
       </table>
-         <div>
-            <table>
-            <tr>
-               <th ><button id="" type="button" className="btnMenuTituloDos">POSTRES</button></th>
-               <th ><button id="" type="button" className="btnMenuTituloDos">BEBIDAS</button></th>
-               <th ><button id="" type="button" className="btnMenuTituloDos">LICORES</button></th>
-            </tr>
-            
-            </table>
-         </div>
 
       </div>
 
