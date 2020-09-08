@@ -1,0 +1,15 @@
+[
+    { "id":"12",
+        "type": "postres",
+      "name": "Suspiro Limeño",
+      "price": 2000
+    },
+    {
+      "name": "Duraznos con Crema",
+      "price": 2000
+    },
+    {
+      "name": "Panqueque celestino",
+      "price": 2000
+    }
+  ]

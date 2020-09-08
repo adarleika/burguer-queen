@@ -5,7 +5,7 @@ function useMenu() {
    const [menu, setMenu] = useState([])
 
    useEffect(() => {
-      fetch("json/menu.json")
+      fetch("json/picoteo.json")
          .then(response => response.json())
          .then(datos => {
             setMenu(datos)
