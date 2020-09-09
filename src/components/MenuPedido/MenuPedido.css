@@ -1,0 +1,43 @@
+.ContenedorDePedido{
+    position: absolute;
+    width: 327px;
+    height: 702px;
+    left: 705px;
+    top: 32px;
+    background-color: #C4C4C4;
+    
+
+    
+
+}
+.TituloPedido{
+    
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 33px;
+    text-align: center;
+    
+    color: #022939;
+    
+}
+.TituloProductos{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+
+    color: #022939;
+}
+h2{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+
+    color: #022939;
+}
