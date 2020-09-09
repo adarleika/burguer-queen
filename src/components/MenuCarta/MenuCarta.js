@@ -28,8 +28,14 @@ export default function Datos() {
                {menu.map(item => (
                   <tr key={item.type}>
                      <td><button id={item.id} type="button" className="btnDetalleMenu" onClick={()=>
-                        console.log (item.name)}
+                        console.log (item.name)
+
+                     }
+                     
+                     
+                  
                      >{item.name}:${item.price}</button></td>
+                     
                   </tr>
                ))}
             </tbody>
