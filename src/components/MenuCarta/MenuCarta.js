@@ -11,8 +11,18 @@ function useMenu() {
             setMenu(datos)
          })
    }, [])
-return menu
+   return menu
 }
+/*
+const unpedido = (e) => {
+   //e.preventDefault();
+   console.log("estoy escuchando")
+   console.log(e.target.name)
+   console.log(e.target.value)
+
+}
+*/
+
 
 //exporto esta fucnion, pero no va a ninguan parte???
 export default function Datos() {
@@ -27,17 +37,20 @@ export default function Datos() {
             <tbody>
                {menu.map(item => (
                   <tr key={item.type}>
-                     <td><button id={item.id} type="button" className="btnDetalleMenu" onClick={()=>
-                        console.log (item.name)
-
+                     <td><button id={item.id} type="button" className="btnDetalleMenu" onClick={
+                         console.log(item.name)
+                       //<span>{item.price}</span>
+                        //unpedido()
+                     
                      }
                      
-                     
-                  
                      >{item.name}:${item.price}</button></td>
-                     
+
+
+
                   </tr>
                ))}
+
             </tbody>
          </table>
       </div>

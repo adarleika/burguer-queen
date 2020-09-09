@@ -1,10 +1,12 @@
 import React from "react";
 import './MenuPedido.css';
+//import unpedido from '../MenuCarta/MenuCarta';
 
 function MenuPedido () {
     const[nombre,setNombre]=React.useState('')
     const[nombresPintar,setnombresPintar]=React.useState([])
-
+    //const[nombreProducto,setnombreProducto]=React.useState([])
+    //const [menu, setMenu] = React.useState([])
 
     const agregarNombre = e =>{
         e.preventDefault()
@@ -22,6 +24,7 @@ function MenuPedido () {
 
         /*una vez que el nombre se haya ingresado le pasamos el string vacio para que limpie*/
         setNombre('')
+        //setMenu('')
     }
 
         return(
@@ -52,21 +55,26 @@ function MenuPedido () {
                 
 
                 <h1 className="TituloProductos">Productos</h1>
-                <ul>
-                    <li>
-                        <span>nombre del Producto</span>
+                <ul>{nombresPintar.map(item=>(
+                    <li key={item.nombreCliente}>
+                        <span>{item.nombreCliente}</span>
+                    </li>
+
+                    ))}
+                </ul>
+                    
                         <div className="pedidomenu">
                           <button id="pedidococina" type="submit" className="buttonPedido">Enviar Pedido</button>
                         </div>
-                    </li>
-              
-              
-                </ul>
+                        
 
-                
+                    <div> aqui se va a pintar los pedidos</div>
+                   
+
         </div>
          
          </React.Fragment>
+         
         );
    }
     
