@@ -24,6 +24,16 @@ function useMenu() {
    }, [])
    return menu
 }
+/*
+const unpedido = (e) => {
+   //e.preventDefault();
+   console.log("estoy escuchando")
+   console.log(e.target.name)
+   console.log(e.target.value)
+
+}
+*/
+
 
 //exporto esta fucnion, pero no va a ninguan parte???
 export default function Datos() {
@@ -63,6 +73,7 @@ export default function Datos() {
                {menu.map(item => (
 
                   <tr key={item.type}>
+
                      <td><button id={item.id} className="btnDetalleMenu"
                         onClick={handleClick} name={item.name} value={item.price}
                      //{()=>
@@ -72,9 +83,12 @@ export default function Datos() {
                      >{item.name}:${item.price}</button></td>
 
 
+
+                     
                   </tr>
 
                ))}
+
             </tbody>
          </table>
 
