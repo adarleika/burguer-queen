@@ -52,17 +52,20 @@ function MenuPedido () {
                 
 
                 <h1 className="TituloProductos">Productos</h1>
+
                 <ul>
-                    <li>
-                        <span>nombre del Producto</span>
-                        <div className="pedidomenu">
+                    {
+                    nombresPintar.map(item => (
+                    <li key={item.nombreCliente}>
+                        <span>{item.nombreCliente}</span>
+                        
+                    </li>
+                   ))
+                    }       
+                </ul>
+                <div className="pedidomenu">
                           <button id="pedidococina" type="submit" className="buttonPedido">Enviar Pedido</button>
                         </div>
-                    </li>
-              
-              
-                </ul>
-
                 
         </div>
          
