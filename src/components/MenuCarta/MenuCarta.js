@@ -13,16 +13,36 @@ function useMenu() {
    }, [])
    return menu
 }
-/*
-const unpedido = (e) => {
+
+
+export const unpedido = (producto) => {
    //e.preventDefault();
-   console.log("estoy escuchando")
-   console.log(e.target.name)
-   console.log(e.target.value)
+   //console.log("estoy escuchando")
+   console.log(producto.name)
+   console.log(producto.value)
+   //console.log(producto.price)
 
 }
-*/
 
+
+const pedido = [];
+
+// Creamos un objeto
+const object = {pedido : 'id'};
+
+// Lo guardamos en localStorage pasandolo a cadena con JSON
+localStorage.setItem('key', JSON.stringify(object));
+
+// Creamos una nueva variable object2 con el valor obtenido de localStorage usando JSON recuperar el objeto inicial
+const object2 = JSON.parse(localStorage.getItem('key'));
+
+// La alerta mostrará 1 por pantalla
+//alert(object2.pedido);
+console.log(object2.pedido);
+//pedido = object2;
+
+pedido.push(pedido);
+console.log(pedido);
 
 //exporto esta fucnion, pero no va a ninguan parte???
 export default function Datos() {
@@ -37,13 +57,17 @@ export default function Datos() {
             <tbody>
                {menu.map(item => (
                   <tr key={item.type}>
-                     <td><button id={item.id} type="button" className="btnDetalleMenu" onClick={
-                         console.log(item.name)
+                     <td><button id={item.id} name={item.name} value={item.price} type="button" className="btnDetalleMenu" onClick={
+                         //console.log(item.name)
                        //<span>{item.price}</span>
-                        //unpedido()
-                     
+
+                       (e)=>
+                        unpedido(e.target)
+                        
+               
                      }
-                     
+
+
                      >{item.name}:${item.price}</button></td>
 
 
