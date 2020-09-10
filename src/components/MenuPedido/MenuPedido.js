@@ -57,22 +57,24 @@ function MenuPedido () {
                 
 
                 <h1 className="TituloProductos">Productos</h1>
-                <ul>{nombresPintar.map(item=>(
+
+
+                <ul>
+                    {
+                    nombresPintar.map(item => (
                     <li key={item.nombreCliente}>
                         <span>{item.nombreCliente}</span>
+                        
                     </li>
-
-                    ))}
+                   ))
+                    }       
                 </ul>
-                    
-                        <div className="pedidomenu">
+                <div className="pedidomenu">
                           <button id="pedidococina" type="submit" className="buttonPedido">Enviar Pedido</button>
                         </div>
-                        
+                
 
-                    <div> aqui se va a pintar los pedidos</div>
-                   
-
+               
         </div>
          
          </React.Fragment>

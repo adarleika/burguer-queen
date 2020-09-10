@@ -3,21 +3,21 @@
       "id":"1",
       "type": "Picoteo",
       "name": "Chorillana",
-      "price": 7500,
+      "price": "7500",
       "description": "papas fritas, carne, huevo frito" 
     },
     {
       "id":"2",
       "type": "Picoteo",
       "name": "Racion de Tequeños",
-      "price": 4500,
+      "price": "4500",
       "description": "Queso llanero, masa ojaldre" 
     },
     {
       "id":"3",
       "type": "Picoteo",
       "name": "Club House",
-      "price": 10000,
+      "price": "10000",
       "description": "sorpresaaaaa"   
     }
     
