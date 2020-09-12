@@ -4,14 +4,14 @@
     height: 702px;
     left: 705px;
     top: 32px;
-    background-color: #C4C4C4;
-    
 
-    
+    /*background: #FFFFFF;*/
+    border-radius: 10px;
+        
 
 }
+
 .TituloPedido{
-    
     
     font-family: Roboto;
     font-style: normal;
@@ -40,4 +40,35 @@ h2{
     line-height: 23px;
 
     color: #022939;
+}
+
+.nombreCiente{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #022939;
+    background: #FFFFFF;
+    border: 1px solid #022939;
+    box-sizing: border-box;
+    border-radius: 6px;
+}
+
+.buttonPedido{
+    /*position: absolute;*/
+    width: 285px;
+    height: 47px;
+    left: 763px;
+    top: 654px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #022939;
+    border-radius: 10px;
 }

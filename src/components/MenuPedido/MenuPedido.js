@@ -1,8 +1,8 @@
 import React from "react";
 import './MenuPedido.css';
-import unpedido from '../MenuCarta/MenuCarta';
+//import unpedido from '../MenuCarta/MenuCarta';
 
-console.log(unpedido)
+//console.log(unpedido)
 
 function MenuPedido () {
     const[nombre,setNombre]=React.useState('')

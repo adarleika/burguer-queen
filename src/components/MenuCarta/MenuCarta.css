@@ -68,3 +68,18 @@ table {
      color: #000000;
  
 }
+
+.pedidoBox{
+    position: absolute;
+    height: 702px;
+    width: 114px;
+    left: 673px;
+    top: 248px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    /*color: #022939;*/
+}

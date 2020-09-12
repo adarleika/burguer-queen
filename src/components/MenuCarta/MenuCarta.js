@@ -26,6 +26,7 @@ function useMenu() {
 }
 
 
+
 //exporto esta fucnion, pero no va a ninguan parte???
 export default function Datos() {
    const menu = useMenu()
@@ -45,8 +46,9 @@ export default function Datos() {
       console.log(orderName);
       console.log(orderPrice);
       initialOrder.push({ "name": orderName, "value": orderPrice });
-      setOrder(initialOrder);
+      setOrder(initialOrder+1);
       console.log(order);
+      console.log(initialOrder);
      
 
    };
@@ -85,7 +87,7 @@ export default function Datos() {
 
 
          <div className="pedidoBox">
-            {order.map((item, type) => {
+            {initialOrder.map((item, type) => {
                return <div key={type}>
                   <p>{item.name}</p>
                   <p>{item.value}</p>

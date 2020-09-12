@@ -21,7 +21,7 @@ export default function DatosSeis() {
     <div className="contenedorDeLicores">
       <table>
         <tr>
-          <th><button id="" type="button" className="btnMenuTituloDos">Licores</button></th>
+          <th><button id="" type="button" className="btnMenuTituloDos">LICORES</button></th>
         </tr>
         <tbody>
           {licores.map(item => (
