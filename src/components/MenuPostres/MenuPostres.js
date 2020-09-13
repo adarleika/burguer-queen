@@ -4,7 +4,7 @@ import './MenuPostres.css'
 function usePostres() {
     const [postres, setPostres] = useState([])
     useEffect(() => {
-        fetch("json/postres.json")
+        fetch("json/dataTotal.json")
             .then(response => response.json())
             .then(datos => {
                 setPostres(datos)
@@ -15,6 +15,8 @@ function usePostres() {
 
 export default function Datoscuatro() {
     const postres = usePostres()
+ const arrayPostres =postres.filter(pos => pos.Type === "Postres")
+  //console.log ( arrayEnsaladas);
     return (
         <div className="contenedorDePostres">
             <table>
@@ -22,7 +24,7 @@ export default function Datoscuatro() {
                     <th><button id="" type="button" className="btnMenuTituloDos">POSTRES</button></th>
                 </tr>
                 <tbody>
-                    {postres.map(item => (
+                    {arrayPostres.map(item => (
                         <tr key={item.type}>
                             <td><button id="" type="button" className="btnDetalleMenuDos">{item.name}:${item.price}</button></td>
                         </tr>

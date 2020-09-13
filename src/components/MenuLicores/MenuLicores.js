@@ -7,7 +7,7 @@ function useLicores() {
   const [licores, setLicores] = useState([])
 
   useEffect(() => {
-    fetch("json/licores.json")
+    fetch("json/dataTotal.json")
       .then(response => response.json())
       .then(datos => {
         setLicores(datos)
@@ -20,7 +20,8 @@ function useLicores() {
 export default function DatosSeis() {
   const licores = useLicores()
   const [cart, setCart]= useState([])
-
+  const arrayLicores =licores.filter(lico => lico.Type === "Licores")
+  console.log ( arrayLicores);
   return (
     <Fragment>
           <div className="contenedorDeLicores">
@@ -28,7 +29,7 @@ export default function DatosSeis() {
           <button id="" type="button" className="btnMenuTituloDos">LICORES</button>
 
                     
-          {licores.map((licor) =>  (
+          {arrayLicores.map((licor) =>  (
             <Licores
             key={licor.id}
             licor={licor}

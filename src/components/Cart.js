@@ -21,12 +21,7 @@ const Cart = ({ cart, setCart }) => {
                                 cart={cart}
                                 setCart={setCart}
                             />
-                            <Licores
-                                key={licor.id}
-                                licor={licor}
-                                cart={cart}
-                                setCart={setCart}
-                            />    
+                           
                             </div>
             )
 
