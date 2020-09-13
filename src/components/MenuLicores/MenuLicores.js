@@ -1,4 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React, { Fragment, useEffect, useState } from "react";
+import Licores from './Licores'
+import Cart from '../Cart'
 import './MenuLicores.css'
 
 function useLicores() {
@@ -17,20 +19,31 @@ function useLicores() {
 
 export default function DatosSeis() {
   const licores = useLicores()
+  const [cart, setCart]= useState([])
+
   return (
-    <div className="contenedorDeLicores">
-      <table>
-        <tr>
-          <th><button id="" type="button" className="btnMenuTituloDos">LICORES</button></th>
-        </tr>
-        <tbody>
-          {licores.map(item => (
-            <tr key={item.type}>
-              <td><button id="" type="button" className="btnDetalleMenuDos">{item.name}:${item.price}</button></td>
-            </tr>
+    <Fragment>
+          <div className="contenedorDeLicores">
+
+          <button id="" type="button" className="btnMenuTituloDos">LICORES</button>
+
+                    
+          {licores.map((licor) =>  (
+            <Licores
+            key={licor.id}
+            licor={licor}
+            cart={cart}
+            setCart={setCart}
+            licores={licores}
+            />
           ))}
-        </tbody>
-      </table>
-    </div>
+          
+        {/*  <Cart 
+          cart={cart} 
+          setCart={setCart}
+           />
+        */}
+      </div>
+    </Fragment>
   )
 };
