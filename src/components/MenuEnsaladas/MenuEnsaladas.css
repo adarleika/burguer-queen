@@ -66,3 +66,55 @@ table {
     line-height: 16px;
      color: #000000;
  }
+
+ .agregar{
+    
+    width: 46px;
+    height: 34px;
+    left: 889px;
+    top: 286px;
+    
+   
+   
+  
+ /* Gray 1 */
+    border: 1px solid #333333;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-family: Roboto;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 14px;
+   line-height: 16px;
+    color: #000000;
+ }
+ .eliminar{
+    width: 164px;
+    height: 30px;
+    left: 138px,323px;
+    top: 162px;
+  
+ /* Gray 1 */
+    border: 1px solid #333333;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-family: Roboto;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 14px;
+   line-height: 16px;
+    color: #000000;
+ }
+
+ .Carrito{
+   
+   
+    width: 327px;
+    height: 702px;
+    left: 200px;
+    top: 300px;
+
+    /*background: #FFFFFF;*/
+    border-radius: 10px;
+        
+ }

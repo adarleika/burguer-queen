@@ -1,6 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { Fragment, useEffect, useState } from "react";
+import Ensaladas from './Ensaladas'
+import Cart from '../Cart'
 import './MenuEnsaladas.css'
 
+//estado de las ensaladas//
 function useEnsaladas() {
   const [ensaladas, setEnsaladas] = useState([])
 
@@ -15,22 +18,44 @@ function useEnsaladas() {
   return ensaladas
 }
 
+
+
+
+
 export default function Datostres() {
   const ensaladas = useEnsaladas()
+  //estado del carrito, esta vacio porque aun usurio no ha elegido nada//
+  const [cart, setCart]= useState([])
   return (
+    <Fragment>
     <div className="contenedorDeEnsaladas">
-      <table>
-        <tr>
-          <th><button id="" type="button" className="btnMenuTitulo">ENSALADAS</button></th>
-        </tr>
-        <tbody>
-          {ensaladas.map(item => (
-            <tr key={item.type}>
-              <td><button id="" type="button" className="btnDetalleMenu">{item.name}:${item.price}</button></td>
-            </tr>
+     
+        
+          <button id="" type="button" className="btnMenuTitulo">ENSALADAS</button>
+        
+        
+          
+          {ensaladas.map((ensaladita) =>  (
+            <Ensaladas
+            key={ensaladita.id}
+            ensaladita={ensaladita}
+            cart={cart}
+            setCart={setCart}
+            ensaladas={ensaladas}
+            />
           ))}
-        </tbody>
-      </table>
+        
+        
+          <Cart 
+          cart={cart} 
+          setCart={setCart}
+           />
+
+         
+
+        
+      
     </div>
+    </Fragment>
   )
 };
