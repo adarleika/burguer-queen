@@ -3,7 +3,7 @@ import React from 'react'
 
 const Postres = ({ postrecillo, cart, setCart, postres }) => {
 
-  const { name, price, id } = postrecillo
+  const { id } = postrecillo
 
   const addPostre = id => {
     const postrecillo = postres.filter((postrecillo) => postrecillo.id === id);

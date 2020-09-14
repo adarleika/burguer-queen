@@ -1,6 +1,6 @@
 import React, { Fragment, useEffect, useState } from "react";
 import Bebidas from './Bebidas'
-import Cart from '../Cart'
+//import Cart from '../Cart'
 import './MenuBebidas.css'
 
 function useBebidas() {

@@ -1,6 +1,6 @@
 import React, { Fragment, useEffect, useState } from "react";
 import Picoteo from './Picoteo'
-import Cart from '../Cart'
+//import Cart from '../Cart'
 import './MenuCarta.css'
 
 function usePicoteo() {

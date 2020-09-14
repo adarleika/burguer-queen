@@ -3,14 +3,14 @@ import React from 'react'
 
 const Picoteo = ({ picot, cart, setCart, picoteo }) => {
 
-    const { name, price, id } = picot
+    const { id } = picot
     const addPicot = id => {
       const picot = picoteo.filter((picot) => picot.id === id);
       setCart([...cart, ...picot]);
       console.log(cart.length);
     };
     const delPicot = (id) => {
-      const Picoteo = cart.filter(picot => picot.id !== id);
+      const picoteo = cart.filter(picot => picot.id !== id);
       setCart(picoteo)
     };
 

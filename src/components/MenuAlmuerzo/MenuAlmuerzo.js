@@ -1,7 +1,7 @@
 import React, { Fragment, useEffect, useState } from "react";
 import './MenuAlmuerzo.css'
 import Almuerzo from './Almuerzo'
-import Cart from '../Cart'
+//import Cart from '../Cart'
 
 function useAlmuerzo() {
   const [almuerzo, setAlmuerzo] = useState([])

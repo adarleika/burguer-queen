@@ -1,7 +1,7 @@
 import React, { Fragment, useEffect, useState } from "react";
 import './MenuPostres.css'
 import Postres from './Postres'
-import Cart from '../Cart'
+//import Cart from '../Cart'
 
 function usePostres() {
     const [postres, setPostres] = useState([])

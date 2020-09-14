@@ -3,7 +3,7 @@ import React from 'react'
 
 const Ensaladas = ({ ensaladita, cart, setCart, ensaladas }) => {
 
-  const { name, price, id } = ensaladita
+  const {  id } = ensaladita
   const addEnsalada = id => {
     const ensaladita = ensaladas.filter((ensaladita) => ensaladita.id === id);
     setCart([...cart, ...ensaladita]);

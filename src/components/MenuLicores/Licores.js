@@ -3,7 +3,7 @@ import React from 'react'
 
 const Licores = ({ licor, cart, setCart, licores }) => {
 
-    const { name, price, id } = licor
+    const {  id } = licor
     const addLicor = id => {
       const licor = licores.filter((licor) => licor.id === id);
       setCart([...cart, ...licor]);
