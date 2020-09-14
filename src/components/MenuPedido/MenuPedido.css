@@ -1,12 +1,13 @@
 .ContenedorDePedido{
     position: absolute;
     width: 327px;
-    height: 702px;
-    left: 705px;
+    /*height: 702px;*/
+    left: 688px;
     top: 32px;
 
-    /*background: #FFFFFF;*/
+    background: #FFFFFF;
     border-radius: 10px;
+   
         
 
 }

@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react'
 import Ensaladas from './MenuEnsaladas/Ensaladas'
+import '../components/Cart.css'
 //import Licores from './MenuLicores/Licores'
 
 //este renderisa en el componente Ensaladas//
@@ -7,10 +8,10 @@ const Cart = ({ cart, setCart }) => {
     return (
         <Fragment>
             <div className="Carrito">
-                < h3>Cariito</h3>
+               
 
                 {cart.length === 0 ? (
-                    <p>No hay nada por aquí...</p>
+                    <p>No has seleccionado ningun pedido</p>
 
                 ) : (
                         cart.map((ensaladita) =>

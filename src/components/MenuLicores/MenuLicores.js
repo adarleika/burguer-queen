@@ -7,7 +7,7 @@ function useLicores() {
   const [licores, setLicores] = useState([])
 
   useEffect(() => {
-    fetch("json/dataTotal.json")
+    fetch("json/licores.json")
       .then(response => response.json())
       .then(datos => {
         setLicores(datos)
@@ -26,7 +26,7 @@ export default function DatosSeis() {
     <Fragment>
           <div className="contenedorDeLicores">
 
-          <button id="" type="button" className="btnMenuTituloDos">LICORES</button>
+          {/*<button id="" type="button" className="btnMenuTituloDos">LICORES</button>*/}
 
                     
           {arrayLicores.map((licor) =>  (

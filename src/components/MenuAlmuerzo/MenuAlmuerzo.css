@@ -1,10 +1,10 @@
-.contenedorDeAlmuerzo{
+.contenedorAlmuerzo{
     position: absolute;
     width: 173px;
     height: 203px;
-    left: 320px;
+    left: -189px;
     top: 52px;
-    background: #C4C4C4;
+    /*background: #C4C4C4;*/
 }
 
 table {

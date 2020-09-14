@@ -7,7 +7,7 @@ function useAlmuerzo() {
   const [almuerzo, setAlmuerzo] = useState([])
 
   useEffect(() => {
-    fetch("json/dataTotal.json")
+    fetch("json/almuerzo.json")
       .then(response => response.json())
       .then(datos => {
         setAlmuerzo(datos)
@@ -26,7 +26,7 @@ export default function DatosDos() {
     <Fragment>
     <div className="contenedorDeAlmuerzo">
 
-    <button id="" type="button" className="btnMenuTitulo">ALMUERZOS</button>
+    {/*<button id="" type="button" className="btnMenuTitulo">ALMUERZOS</button>*/}
       
     {arrayAlmuerzo.map((almu) =>  (
             <Almuerzo

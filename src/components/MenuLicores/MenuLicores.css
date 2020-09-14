@@ -1,10 +1,10 @@
-.contenedorDeLicores{
+.contenedorLicores{
     position: absolute;
     width: 175px;
     height: 198px;
-    left: 507px;
+    left: -1px;
     top: 417px;
-    background: #C4C4C4;
+    /*background: #C4C4C4;*/
   
 }
 

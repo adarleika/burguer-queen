@@ -1,10 +1,19 @@
-.contenedorDeEnsaladas{
+.contenedorEnsalada{
     position: absolute;
-    width: 167px;
+   width: 167px;
     height: 198px;
     left: 505px;
     top: 52px;
-    background: #C4C4C4;
+    /*background: #C4C4C4;*/
+}
+
+.contenedorTotal{
+    position: absolute;
+    width: 167px;
+    height: 198px;
+    left: -1px;
+    top: 52px;
+    /*background: #C4C4C4;*/
 }
 
 table {
@@ -106,7 +115,7 @@ table {
     color: #000000;
  }
 
- .Carrito{
+ .Carrito2{
    
    
     width: 327px;
@@ -118,3 +127,48 @@ table {
     border-radius: 10px;
         
  }
+
+ .contenedorBebidas{
+    position: absolute;
+    width: 175px;
+    height: 198px;
+    left: 316px;
+    top: 417px;
+    /*background: #C4C4C4;*/
+ }
+
+ .contenedorPostres{
+   position: absolute;
+   width: 175px;
+   height: 198px;
+   left: -379px;
+   top: 417px;
+   /*background: #C4C4C4;*/
+}
+
+.contenedorMenu{
+   position: absolute;
+   width: 167px;
+   height: 198px;
+   left: -379px;
+   top: 52px;
+   /*background: #C4C4C4;*/
+}
+
+.contenedorLicores{
+    position: absolute;
+    width: 175px;
+    height: 198px;
+    left: -1px;
+    top: 417px;
+    /*background: #C4C4C4;*/
+}
+
+.contenedorAlmuerzo{
+    position: absolute;
+    width: 173px;
+    height: 203px;
+    left: -189px;
+    top: 52px;
+    /*background: #C4C4C4;*/
+}

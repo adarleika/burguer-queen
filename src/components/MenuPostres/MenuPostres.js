@@ -6,7 +6,7 @@ import Cart from '../Cart'
 function usePostres() {
     const [postres, setPostres] = useState([])
     useEffect(() => {
-        fetch("json/dataTotal.json")
+        fetch("json/postres.json")
             .then(response => response.json())
             .then(datos => {
                 setPostres(datos)
@@ -19,13 +19,13 @@ export default function Datoscuatro() {
     const postres = usePostres()
 
     const [cart, setCart]= useState([])
-    const arrayPostres =postres.filter(postrecillo => postrecillo.Type === "Postres")
+    const arrayPostres =postres.filter(postre=> postre.Type === "Postres")
       console.log ( arrayPostres);
 
     return (
         <Fragment>
         <div className="contenedorDePostres">
-        <button id="" type="button" className="btnMenuTituloDos">POSTRES</button>
+       {/* <button id="" type="button" className="btnMenuTituloDos">POSTRES</button>*/}
             
         {arrayPostres.map((postrecillo) =>  (
             <Postres
@@ -33,7 +33,7 @@ export default function Datoscuatro() {
             postrecillo={postrecillo}
             cart={cart}
             setCart={setCart}
-            postres={postrecillo}
+            postres={postres}
             />
           ))}
         </div>
