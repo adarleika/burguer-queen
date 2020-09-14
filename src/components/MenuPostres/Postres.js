@@ -1,46 +1,47 @@
 import React from 'react'
 
 
-const Postres = ({ ensaladita, cart, setCart, ensaladas }) => {
+const Postres = ({ postrecillo, cart, setCart, postres }) => {
 
-  const { name, price, id } = ensaladita
-  const addEnsalada = id => {
-    const ensaladita = ensaladas.filter((ensaladita) => ensaladita.id === id);
-    setCart([...cart, ...ensaladita]);
+  const { name, price, id } = postrecillo
+
+  const addPostre = id => {
+    const postrecillo = postres.filter((postrecillo) => postrecillo.id === id);
+    setCart([...cart, ...postrecillo]);
     console.log(cart.length);
   };
-  const delEnsalada = (id) => {
-    const ensaladas = cart.filter(ensaladita => ensaladita.id !== id);
-    setCart(ensaladas)
+  const delPostre = (id) => {
+    const postres = cart.filter(postrecillo => postrecillo.id !== id);
+    setCart(postres)
   };
   return (
     <div>
       <ul>
         
 
-      {ensaladas ? (
+      {postres ? (
           <button
             className="btnDetalleMenu"
             type="button"
-            onClick={() => addEnsalada(id)}
+            onClick={() => addPostre(id)}
           >
-            {ensaladita.name}:${ensaladita.price}
+            {postrecillo.name}:${postrecillo.price}
           </button>
         ) : (
           
             <div>
-             <p>{ensaladita.name}:${ensaladita.price}</p>
+             <p>{postrecillo.name}:${postrecillo.price}</p>
               <button
                 className=""
                 type="button"
-                onClick={() => delEnsalada(id)}
+                onClick={() => delPostre(id)}
               >
                 Eliminar
              </button>
               <button
                 className=""
                 type="button"
-                onClick={() => delEnsalada(id)}
+                onClick={() => delPostre(id)}
               >
                 Confirmar
               </button>

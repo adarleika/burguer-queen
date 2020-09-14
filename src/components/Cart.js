@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react'
 import Ensaladas from './MenuEnsaladas/Ensaladas'
-import Licores from './MenuLicores/Licores'
+//import Licores from './MenuLicores/Licores'
 
 //este renderisa en el componente Ensaladas//
 const Cart = ({ cart, setCart }) => {
@@ -13,7 +13,7 @@ const Cart = ({ cart, setCart }) => {
                     <p>No hay nada por aquí...</p>
 
                 ) : (
-                        cart.map((ensaladita, licor) =>
+                        cart.map((ensaladita) =>
                         <div>
                             <Ensaladas
                                 key={ensaladita.id}
@@ -23,6 +23,7 @@ const Cart = ({ cart, setCart }) => {
                             />
                            
                             </div>
+                            
             )
 
 
