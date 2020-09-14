@@ -1,5 +1,5 @@
 import React from "react";
-import './MenuPedido.css';
+//import './MenuPedido.css';
 //import unpedido from '../MenuCarta/MenuCarta';
 
 //console.log(unpedido)
