@@ -1,10 +1,10 @@
-.contenedorDeMenu{
+.contenedorMenu{
     position: absolute;
     width: 167px;
     height: 198px;
-    left: 136px;
+    left: -379px;
     top: 52px;
-    background: #C4C4C4;
+    /*background: #C4C4C4;*/
 }
 
 table {

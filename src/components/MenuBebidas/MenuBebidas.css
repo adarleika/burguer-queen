@@ -1,10 +1,11 @@
-.contenedorDeBebidas{
+
+.contenedorBebidas{
     position: absolute;
     width: 175px;
     height: 198px;
-    left: 316px;
+    left: -189px;
     top: 417px;
-    background: #C4C4C4;
+    /*background: #C4C4C4;*/
 }
 
 table {
@@ -48,3 +49,4 @@ table {
     line-height: 16px;
     color: #000000;
 }
+

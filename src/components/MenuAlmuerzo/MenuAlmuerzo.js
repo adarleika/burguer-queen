@@ -1,5 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React, { Fragment, useEffect, useState } from "react";
 import './MenuAlmuerzo.css'
+import Almuerzo from './Almuerzo'
+import Cart from '../Cart'
 
 function useAlmuerzo() {
   const [almuerzo, setAlmuerzo] = useState([])
@@ -17,20 +19,27 @@ function useAlmuerzo() {
 
 export default function DatosDos() {
   const almuerzo = useAlmuerzo()
+  const [cart, setCart]= useState([])
+  const arrayAlmuerzo =almuerzo.filter(almu => almu.Type === "Almuerzos")
+  console.log ( arrayAlmuerzo);
   return (
+    <Fragment>
     <div className="contenedorDeAlmuerzo">
-      <table>
-        <tr>
-          <th><button id="" type="button" className="btnMenuTitulo">ALMUERZOS</button></th>
-        </tr>
-        <tbody>
-          {almuerzo.map(item => (
-            <tr key={item.type}>
-              <td><button id="" type="button" className="btnDetalleMenu">{item.name}:${item.price}</button></td>
-            </tr>
+
+    {/*<button id="" type="button" className="btnMenuTitulo">ALMUERZOS</button>*/}
+      
+    {arrayAlmuerzo.map((almu) =>  (
+            <Almuerzo
+            key={almu.id}
+            almu={almu}
+            cart={cart}
+            setCart={setCart}
+            almuerzo={almuerzo}
+            />
           ))}
-        </tbody>
-      </table>
+
+         
     </div>
+    </Fragment>
   )
 };

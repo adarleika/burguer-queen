@@ -1,10 +1,19 @@
-.contenedorDeEnsaladas{
+.contenedorEnsalada{
     position: absolute;
-    width: 167px;
+   width: 167px;
     height: 198px;
     left: 505px;
     top: 52px;
-    background: #C4C4C4;
+    /*background: #C4C4C4;*/
+}
+
+.contenedorTotal{
+    position: absolute;
+    width: 167px;
+    height: 198px;
+    left: -1px;
+    top: 52px;
+    /*background: #C4C4C4;*/
 }
 
 table {
@@ -66,3 +75,100 @@ table {
     line-height: 16px;
      color: #000000;
  }
+
+ .agregar{
+    
+    width: 46px;
+    height: 34px;
+    left: 889px;
+    top: 286px;
+    
+   
+   
+  
+ /* Gray 1 */
+    border: 1px solid #333333;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-family: Roboto;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 14px;
+   line-height: 16px;
+    color: #000000;
+ }
+ .eliminar{
+    width: 164px;
+    height: 30px;
+    left: 138px,323px;
+    top: 162px;
+  
+ /* Gray 1 */
+    border: 1px solid #333333;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-family: Roboto;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 14px;
+   line-height: 16px;
+    color: #000000;
+ }
+
+ .Carrito2{
+   
+   
+    width: 327px;
+    height: 702px;
+    left: 200px;
+    top: 300px;
+
+    /*background: #FFFFFF;*/
+    border-radius: 10px;
+        
+ }
+
+ .contenedorBebidas{
+    position: absolute;
+    width: 175px;
+    height: 198px;
+    left: 316px;
+    top: 417px;
+    /*background: #C4C4C4;*/
+ }
+
+ .contenedorPostres{
+   position: absolute;
+   width: 175px;
+   height: 198px;
+   left: -379px;
+   top: 417px;
+   /*background: #C4C4C4;*/
+}
+
+.contenedorMenu{
+   position: absolute;
+   width: 167px;
+   height: 198px;
+   left: -379px;
+   top: 52px;
+   /*background: #C4C4C4;*/
+}
+
+.contenedorLicores{
+    position: absolute;
+    width: 175px;
+    height: 198px;
+    left: -1px;
+    top: 417px;
+    /*background: #C4C4C4;*/
+}
+
+.contenedorAlmuerzo{
+    position: absolute;
+    width: 173px;
+    height: 203px;
+    left: -189px;
+    top: 52px;
+    /*background: #C4C4C4;*/
+}

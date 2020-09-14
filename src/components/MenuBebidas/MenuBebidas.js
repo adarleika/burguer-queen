@@ -1,4 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React, { Fragment, useEffect, useState } from "react";
+import Bebidas from './Bebidas'
+import Cart from '../Cart'
 import './MenuBebidas.css'
 
 function useBebidas() {
@@ -17,21 +19,28 @@ function useBebidas() {
 
 export default function DatosCinco() {
   const bebidas = useBebidas()
+  const [cart, setCart]= useState([])
+  const arrayBebidas =bebidas.filter(bebi => bebi.Type === "Bebidas")
+  console.log ( arrayBebidas);
   return (
+    <Fragment>
     <div className="contenedorDeBebidas">
-      <table>
-        <tr>
-          <th><button id="" type="button" className="btnMenuTituloDos">BEBIDAS</button></th>
-        </tr>
 
-        <tbody>
-          {bebidas.map(item => (
-            <tr key={item.type}>
-              <td><button id="" type="button" className="btnDetalleMenuDos">{item.name}:${item.price}</button></td>
-            </tr>
+    {/*<button id="" type="button" className="btnMenuTituloDos">BEBIDAS</button>*/}
+
+             
+    {arrayBebidas.map((bebida) =>  (
+            <Bebidas
+            key={bebida.id}
+            bebida={bebida}
+            cart={cart}
+            setCart={setCart}
+            bebidas={bebidas}
+            />
           ))}
-        </tbody>
-      </table>
-    </div>
+          
+  
+      </div>
+    </Fragment>
   )
 };
