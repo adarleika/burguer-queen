@@ -49,7 +49,7 @@
         
         {  "id":"7",
             "Type":"Ensaladas",
-             "name": "lechuga",
+             "name": "Lechuga",
             "price": "3000"
             
                 
@@ -89,25 +89,25 @@
 
         { "id":"13",
             "Type":"Bebidas",
-            "name": "agua",
+            "name": "Agua",
             "price": "1000"
           },
       
           {"id":"14",
             "Type":"Bebidas",
-            "name": "gaseosa",
+            "name": "Gaseosa",
             "price": "1500"
           },
           {
             "id":"15",
             "Type":"Bebidas",
-            "name": "jugo Natural",
+            "name": "Jugo Natural",
             "price": "1500"
           },
       
         { "id":"16",
             "Type":"Licores",
-            "name": "cerveza",
+            "name": "Cerveza",
             "price": "2000"
           },
       
