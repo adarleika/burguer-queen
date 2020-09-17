@@ -53,6 +53,11 @@ export default function Datostres() {
 
   //estado del carrito, esta vacio porque aun usurio no ha elegido nada//
   const [cart, setCart] = useState([])
+  //const [contador, setContador]=useState()
+
+  const [pedido, setPedido]=React.useState('')
+
+
   return (
     <Fragment>
       <div className="contenedorEnsalada">
@@ -65,7 +70,11 @@ export default function Datostres() {
             ensaladita={ensaladita}
             cart={cart}
             setCart={setCart}
+            pedido={pedido}
+            setPedido={setPedido}
             ensaladas={ensaladas}
+            /*contador={contador}
+        setContador={setContador}*/
           />
         ))}
       </div>

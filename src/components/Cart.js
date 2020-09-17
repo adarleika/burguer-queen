@@ -2,7 +2,7 @@ import React, { Fragment } from 'react'
 import Ensaladas from './MenuEnsaladas/Ensaladas'
 import '../components/Cart.css'
 //import Licores from './MenuLicores/Licores'
-
+//import Contador from './Contador'
 //este renderisa en el componente Ensaladas//
 const Cart = ({ cart, setCart }) => {
     return (
@@ -22,7 +22,7 @@ const Cart = ({ cart, setCart }) => {
                                 cart={cart}
                                 setCart={setCart}
                             />
-                           
+               
                             </div>
                             
             )
@@ -30,7 +30,7 @@ const Cart = ({ cart, setCart }) => {
 
                     )
                 }
-
+                
 
             </div>
         </Fragment>
