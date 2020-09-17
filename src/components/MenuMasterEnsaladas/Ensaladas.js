@@ -17,7 +17,21 @@ const Ensaladas = ({ ensaladita, cart, setCart, ensaladas, pedido, setPedido}) =
     setCart(ensaladas)
   }
 
-  console.log(cart)
+  const aumentar =(id) => {
+     
+    
+    //const aumentarEnsaladita = ( ensaladita.id === id +1);
+    
+    console.log(cart.length);
+    const aumentarEnsaladita = ensaladas.reduce(function (ensaladita, itemId) {
+      return itemId === ensaladita ? cart += 1 : ensaladita;
+      
+  }, 0);
+
+  setCart([...cart, ...aumentarEnsaladita]);
+     
+  }
+
 
   const guardarPedido =  () =>{
    
@@ -97,8 +111,8 @@ const Ensaladas = ({ ensaladita, cart, setCart, ensaladas, pedido, setPedido}) =
               >
                 Confirmar
               </button>
-      {/*  <button onClick={() => aumentar(id)}>+</button>
-          <button onClick={() => restar()}>-</button>
+      <button onClick={() => aumentar(id)}>+</button>
+        {/*  <button onClick={() => restar()}>-</button>
         */}
             <button id="pedidococina" type="submit" className="buttonPedido" onClick={() => guardarPedido(id)}>Enviar Pedido</button>
             </div> 

@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react'
-import Ensaladas from './MenuEnsaladas/Ensaladas'
+import Ensaladas from './MenuMasterEnsaladas/Ensaladas'
 import '../components/Cart.css'
 //import Licores from './MenuLicores/Licores'
 //import Contador from './Contador'
