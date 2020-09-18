@@ -4,7 +4,8 @@ import 'firebase/firestore'
 import {firebase} from '../../firebase'
 
 
-const Ensaladas = ({ ensaladita, cart, setCart, ensaladas, pedido, setPedido}) => {
+
+const Ensaladas = ({ ensaladita, cart, setCart, ensaladas }) => {
 
   const { name, price, id } = ensaladita
   const addEnsalada = id => {
@@ -35,7 +36,7 @@ const Ensaladas = ({ ensaladita, cart, setCart, ensaladas, pedido, setPedido}) =
 
   const guardarPedido =  () =>{
    
-      console.log("mensaje alerta")
+      
       console.log(cart)
     const db= firebase.firestore()
     const nuevoPedido={
@@ -51,8 +52,8 @@ const Ensaladas = ({ ensaladita, cart, setCart, ensaladas, pedido, setPedido}) =
     ])
     setCart('')
     }
-    
-  
+
+   
 
   
   /*const [contador, setContador]=useState()
@@ -117,13 +118,11 @@ const Ensaladas = ({ ensaladita, cart, setCart, ensaladas, pedido, setPedido}) =
             <button id="pedidococina" type="submit" className="buttonPedido" onClick={() => guardarPedido(id)}>Enviar Pedido</button>
             </div> 
           )}
-               
-
-
-
+ 
             </ul>
-
+            
     </div>
+   
   );
 };
 
