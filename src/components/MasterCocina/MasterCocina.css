@@ -1,0 +1,25 @@
+.ContenedorPrincipalPedidos{
+    position: absolute;
+width: 940px;
+height: 498px;
+left: 120px;
+top: 63px;
+
+}
+
+
+
+.contenedorPedidos{
+
+   display: inline-block;
+
+    width: 247px;
+    height: 240px;
+    left: 450px;
+    top: 72px;
+    
+    background: #FFFFFF;
+    border: 2px solid #022939;
+    box-sizing: border-box;
+    border-radius: 10px;
+}

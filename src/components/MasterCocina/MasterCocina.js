@@ -14,32 +14,38 @@ const MasterCocina = () => {
           const data = await db.collection ('pedidos').get()
           console.log(data.docs)
           const arrayData = data.docs.map(doc =>({id:doc.id,...doc.data()}) )
+          
          console.log(arrayData)
+         
          setPedidos(arrayData)
-   
+         console.log(arrayData[3].name[1].price)
+         console.log(data)
         } catch (error){
           console.log(error)
         }
    
-   
+        
       }
+      
      obtenerDatos()
    }, [])
    
-
+   
    return (
 
-            <div>
+            <div className="ContenedorPrincipalPedidos">
                <h1>Hola cocina</h1>
-         <ul>
-         {
+
+               
+         {  
               pedidos.map(item =>(
-                 <li key={item.id}>{item.price}</li>
-                             ))
-
+              <p className="contenedorPedidos" key={item.id}>{item.id}</p>
+               ))
+              
            }
-
-           </ul> 
+           
+         
+           
       </div>
    )
 }
